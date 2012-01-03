@@ -1,8 +1,10 @@
-Simple interface for reading zip files with python.
+Simple helper for reading zip files with python.
 
 Includes two functions:
- - fileiterator(): Iterates over all files returning filename and content for each. Folders are returned as their own files too (no content).
+ - fileiterator(): Iterates through all files in the zip file returning filename and content for each. 
  - process(): Iterates through all files inside the zip file calling the callback function for each file.
+
+Note: Folders are returned the same as files but they have no content and have trailing slash.
 
 Sample usage:
 
